@@ -10,9 +10,10 @@ import org.testng.annotations.Test;
 
 public class EmailTesting {
 	WebDriver driver;
-	private String bodyText = "Sample Email Message";
-	private String recipient = "tahabikanerwala@mail.com";
-	private String subject = "Sample Subject Line";
+	private String bodyText = "Automation QA test for Incubyte";
+	private String recipient = "tahabikanerwala@gmail.com"; //Edit mail as per required
+	private String cc = "tahabikanerwala@gmail.com";
+	private String subject = "Incubyte";
 
 	@BeforeSuite
 	public void openBrowser() {
@@ -64,7 +65,7 @@ public class EmailTesting {
 		// Element to click CC
 		driver.findElement(By.xpath("//span[@class='aB gQ pE']")).click();
 		// Element for Adding CC recipient
-		driver.findElement(By.xpath("//textarea[@name='cc']")).sendKeys(recipient);
+		driver.findElement(By.xpath("//textarea[@name='cc']")).sendKeys(cc);
 		driver.findElement(By.className("aoT")).sendKeys(subject);
 		driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
 		driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click();
