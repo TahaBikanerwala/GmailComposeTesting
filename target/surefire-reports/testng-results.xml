@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="109128" started-at="2021-10-18T12:37:38Z" finished-at="2021-10-18T12:39:27Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="109128" started-at="2021-10-18T12:37:38Z" finished-at="2021-10-18T12:39:27Z">
+      <class name="EmailTesting">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EmailTesting@90f6bfd]" name="openBrowser" is-config="true" duration-ms="5414" started-at="2021-10-18T12:37:32Z" finished-at="2021-10-18T12:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openSite()[pri:1, instance:EmailTesting@90f6bfd]" name="openSite" duration-ms="29779" started-at="2021-10-18T12:37:38Z" finished-at="2021-10-18T12:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method status="PASS" signature="logIn()[pri:2, instance:EmailTesting@90f6bfd]" name="logIn" duration-ms="5979" started-at="2021-10-18T12:38:07Z" finished-at="2021-10-18T12:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="composeClick()[pri:3, instance:EmailTesting@90f6bfd]" name="composeClick" duration-ms="20650" started-at="2021-10-18T12:38:13Z" finished-at="2021-10-18T12:38:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeClick -->
+        <test-method status="PASS" signature="sendMail()[pri:4, instance:EmailTesting@90f6bfd]" name="sendMail" duration-ms="5640" started-at="2021-10-18T12:38:34Z" finished-at="2021-10-18T12:38:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="sendWithCC()[pri:5, instance:EmailTesting@90f6bfd]" name="sendWithCC" duration-ms="5856" started-at="2021-10-18T12:38:40Z" finished-at="2021-10-18T12:38:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithCC -->
+        <test-method status="PASS" signature="sendWithAttachmentFromDrive()[pri:6, instance:EmailTesting@90f6bfd]" name="sendWithAttachmentFromDrive" duration-ms="14757" started-at="2021-10-18T12:38:46Z" finished-at="2021-10-18T12:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithAttachmentFromDrive -->
+        <test-method status="PASS" signature="sendWithEmoji()[pri:7, instance:EmailTesting@90f6bfd]" name="sendWithEmoji" duration-ms="6036" started-at="2021-10-18T12:39:00Z" finished-at="2021-10-18T12:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithEmoji -->
+        <test-method status="PASS" signature="sendWithoutRecipient()[pri:8, instance:EmailTesting@90f6bfd]" name="sendWithoutRecipient" duration-ms="5178" started-at="2021-10-18T12:39:06Z" finished-at="2021-10-18T12:39:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithoutRecipient -->
+        <test-method status="PASS" signature="sendWithoutSubject()[pri:9, instance:EmailTesting@90f6bfd]" name="sendWithoutSubject" duration-ms="5314" started-at="2021-10-18T12:39:11Z" finished-at="2021-10-18T12:39:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithoutSubject -->
+        <test-method status="PASS" signature="sendWithoutBody()[pri:10, instance:EmailTesting@90f6bfd]" name="sendWithoutBody" duration-ms="4775" started-at="2021-10-18T12:39:17Z" finished-at="2021-10-18T12:39:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithoutBody -->
+        <test-method status="PASS" signature="discardDraft()[pri:11, instance:EmailTesting@90f6bfd]" name="discardDraft" duration-ms="5118" started-at="2021-10-18T12:39:22Z" finished-at="2021-10-18T12:39:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discardDraft -->
+      </class> <!-- EmailTesting -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

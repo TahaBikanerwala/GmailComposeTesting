@@ -1,0 +1,3 @@
+name: dummy dummy
+email: dummymail.586458@gmail.com
+password: dummymail@6
