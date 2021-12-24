@@ -6,13 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class EmailTesting {
 	WebDriver driver;
 	private String bodyText = "Automation QA test for Incubyte";
-	private String recipient = "tahabikanerwala@gmail.com"; //Edit mail as per required
-	private String cc = "tahabikanerwala@gmail.com";
+	private String recipient = "tahabikanerwal@gmail.com"; //Edit mail as per required
+	private String cc = "tahabikanerwal@gmail.com";
 	private String subject = "Incubyte";
 
 	@BeforeSuite
@@ -80,16 +81,17 @@ public class EmailTesting {
 		driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
 		// Element to click on Google Drive icon
 		driver.findElement(By.xpath("//div[@class='aA7 aaA aMZ']")).click();
-		WebElement myframe = driver.findElement(By.xpath("//iframe[@class='KA-JQ']"));
+		Thread.sleep(2000	);
+		WebElement myframe = driver.findElement(By.xpath("//iframe[@class='KA-JQ']"));			
 		driver.switchTo().frame(myframe);
-		driver.findElement(By.xpath("//div[@class='ge-Fi-hc ge-Df-ke']")).click();
+		driver.findElement(By.xpath("//div[@class='ge-Di-hc ge-Df-ke']")).click();
 		// Element to click on MyDrive
-		driver.findElement(By.xpath("//div[@class='ge-Di-Zb-Pj']")).click();
+		driver.findElement(By.xpath("//div[@class='ge-Bi-Zb-Nj']")).click();
 		// Element to click on attachment
 //		Actions action = new Actions(driver);
 //		WebElement elementLocator = driver.findElement(By.xpath("//div[@class='Od-nh-Gf-Q-Kc']"));
 //		action.doubleClick(elementLocator);
-		driver.findElement(By.xpath("//div[@class='Od-nh-Gf-Q-Kc']")).click();
+		driver.findElement(By.xpath("//div[@class='Od-lh-Gf-Q-Ah-pe']")).click();
 		Thread.sleep(2000);
 		// Element to click on Insert button
 		driver.findElement(By.xpath("//div[@class='a-b-c d-u d-u-F ge-tb-jf-enabled']")).click();
@@ -100,7 +102,6 @@ public class EmailTesting {
 		Thread.sleep(4000);
 
 	}
-
 	
 	  @Test(priority=7) //Test Case 5 
 	  public void sendWithEmoji() throws InterruptedException {
@@ -116,7 +117,6 @@ public class EmailTesting {
 	  driver.findElement(By.xpath("//button[@aria-label='face with tears of joy']")).click();
 	  driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click(); 
 	  Thread.sleep(4000); }
-	
 	 
 	  @Test(priority = 8) //Test Case 6 
 	  public void sendWithoutRecipient() throws InterruptedException { 
@@ -152,16 +152,15 @@ public class EmailTesting {
 	  driver.findElement(By.className("aoT")).sendKeys(subject);
 	  driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click(); 
 	  Thread.sleep(4000); }
-	  
-	  
+
 	  @Test(priority=11) //Test Case 9 
 	  public void discardDraft() throws InterruptedException {
 	  driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
 	  driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 	  driver.findElement(By.className("aoT")).sendKeys(subject);
 	  driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
-	   driver.findElement(By.xpath("//div[@class='oh J-Z-I J-J5-Ji T-I-ax7']")).click(); 
-	   Thread.sleep(4000);
+	  driver.findElement(By.xpath("//div[@class='oh J-Z-I J-J5-Ji T-I-ax7']")).click(); 
+	  Thread.sleep(4000);
 	 
 	  }
 	 
