@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,6 +107,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="discardDraft">discardDraft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -117,7 +122,42 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendMail">sendMail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendMailLater">sendMailLater</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendWithAttachmentFromDrive">sendWithAttachmentFromDrive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendWithCC">sendWithCC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendWithEmoji">sendWithEmoji</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendWithoutBody">sendWithoutBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendWithoutRecipient">sendWithoutRecipient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="EmailTesting" hash-for-method="sendWithoutSubject">sendWithoutSubject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -147,6 +187,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="discardDraft">
+                  </a> <!-- discardDraft -->
+                  <span class="method-name">discardDraft</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="logIn">
                   </a> <!-- logIn -->
                   <span class="method-name">logIn</span>
@@ -161,9 +208,58 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="sendMail">
+                  </a> <!-- sendMail -->
+                  <span class="method-name">sendMail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendMailLater">
+                  </a> <!-- sendMailLater -->
+                  <span class="method-name">sendMailLater</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="sendWithAttachmentFromDrive">
                   </a> <!-- sendWithAttachmentFromDrive -->
                   <span class="method-name">sendWithAttachmentFromDrive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendWithCC">
+                  </a> <!-- sendWithCC -->
+                  <span class="method-name">sendWithCC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendWithEmoji">
+                  </a> <!-- sendWithEmoji -->
+                  <span class="method-name">sendWithEmoji</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendWithoutBody">
+                  </a> <!-- sendWithoutBody -->
+                  <span class="method-name">sendWithoutBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendWithoutRecipient">
+                  </a> <!-- sendWithoutRecipient -->
+                  <span class="method-name">sendWithoutRecipient</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendWithoutSubject">
+                  </a> <!-- sendWithoutSubject -->
+                  <span class="method-name">sendWithoutSubject</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,23 +316,55 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openSite')
 data.setCell(0, 2, 'EmailTesting')
-data.setCell(0, 3, 32676);
+data.setCell(0, 3, 26315);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'composeClick')
+data.setCell(1, 1, 'sendWithAttachmentFromDrive')
 data.setCell(1, 2, 'EmailTesting')
-data.setCell(1, 3, 22712);
+data.setCell(1, 3, 14045);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'sendWithAttachmentFromDrive')
+data.setCell(2, 1, 'sendMail')
 data.setCell(2, 2, 'EmailTesting')
-data.setCell(2, 3, 18555);
+data.setCell(2, 3, 9633);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'logIn')
+data.setCell(3, 1, 'composeClick')
 data.setCell(3, 2, 'EmailTesting')
-data.setCell(3, 3, 8739);
+data.setCell(3, 3, 7230);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'sendWithEmoji')
+data.setCell(4, 2, 'EmailTesting')
+data.setCell(4, 3, 6145);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sendWithCC')
+data.setCell(5, 2, 'EmailTesting')
+data.setCell(5, 3, 5597);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'sendWithoutRecipient')
+data.setCell(6, 2, 'EmailTesting')
+data.setCell(6, 3, 5125);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'sendWithoutBody')
+data.setCell(7, 2, 'EmailTesting')
+data.setCell(7, 3, 5008);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'sendWithoutSubject')
+data.setCell(8, 2, 'EmailTesting')
+data.setCell(8, 3, 4997);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'discardDraft')
+data.setCell(9, 2, 'EmailTesting')
+data.setCell(9, 3, 4919);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'logIn')
+data.setCell(10, 2, 'EmailTesting')
+data.setCell(10, 3, 4783);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'sendMailLater')
+data.setCell(11, 2, 'EmailTesting')
+data.setCell(11, 3, 3461);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -274,20 +402,56 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">openSite</span>
-                <span class="method-start">4535 ms</span>
+                <span class="method-start">3471 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logIn</span>
-                <span class="method-start">37224 ms</span>
+                <span class="method-start">29792 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">composeClick</span>
-                <span class="method-start">45964 ms</span>
+                <span class="method-start">34576 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendMail</span>
+                <span class="method-start">41806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendWithCC</span>
+                <span class="method-start">51439 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sendWithAttachmentFromDrive</span>
-                <span class="method-start">68677 ms</span>
+                <span class="method-start">57036 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendWithEmoji</span>
+                <span class="method-start">71081 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendWithoutRecipient</span>
+                <span class="method-start">77226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendWithoutSubject</span>
+                <span class="method-start">82351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendWithoutBody</span>
+                <span class="method-start">87348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">discardDraft</span>
+                <span class="method-start">92356 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendMailLater</span>
+                <span class="method-start">97275 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">100763 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

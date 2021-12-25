@@ -1,32 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="82749" started-at="2021-12-24T11:44:28Z" finished-at="2021-12-24T11:45:51Z">
+  <suite name="Suite" duration-ms="97293" started-at="2021-12-25T08:21:44Z" finished-at="2021-12-25T08:23:22Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="82749" started-at="2021-12-24T11:44:28Z" finished-at="2021-12-24T11:45:51Z">
+    <test name="Test" duration-ms="97293" started-at="2021-12-25T08:21:44Z" finished-at="2021-12-25T08:23:22Z">
       <class name="EmailTesting">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EmailTesting@4157f54e]" name="openBrowser" is-config="true" duration-ms="4484" started-at="2021-12-24T11:44:24Z" finished-at="2021-12-24T11:44:28Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:EmailTesting@1936f0f5]" name="openBrowser" is-config="true" duration-ms="3443" started-at="2021-12-25T08:21:41Z" finished-at="2021-12-25T08:21:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="openSite()[pri:1, instance:EmailTesting@4157f54e]" name="openSite" duration-ms="32676" started-at="2021-12-24T11:44:28Z" finished-at="2021-12-24T11:45:01Z">
+        <test-method status="PASS" signature="openSite()[pri:1, instance:EmailTesting@1936f0f5]" name="openSite" duration-ms="26315" started-at="2021-12-25T08:21:44Z" finished-at="2021-12-25T08:22:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="logIn()[pri:2, instance:EmailTesting@4157f54e]" name="logIn" duration-ms="8739" started-at="2021-12-24T11:45:01Z" finished-at="2021-12-24T11:45:10Z">
+        <test-method status="PASS" signature="logIn()[pri:2, instance:EmailTesting@1936f0f5]" name="logIn" duration-ms="4783" started-at="2021-12-25T08:22:11Z" finished-at="2021-12-25T08:22:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="composeClick()[pri:3, instance:EmailTesting@4157f54e]" name="composeClick" duration-ms="22712" started-at="2021-12-24T11:45:10Z" finished-at="2021-12-24T11:45:33Z">
+        <test-method status="PASS" signature="composeClick()[pri:3, instance:EmailTesting@1936f0f5]" name="composeClick" duration-ms="7230" started-at="2021-12-25T08:22:15Z" finished-at="2021-12-25T08:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composeClick -->
-        <test-method status="PASS" signature="sendWithAttachmentFromDrive()[pri:6, instance:EmailTesting@4157f54e]" name="sendWithAttachmentFromDrive" duration-ms="18555" started-at="2021-12-24T11:45:33Z" finished-at="2021-12-24T11:45:51Z">
+        <test-method status="PASS" signature="sendMail()[pri:4, instance:EmailTesting@1936f0f5]" name="sendMail" duration-ms="9633" started-at="2021-12-25T08:22:23Z" finished-at="2021-12-25T08:22:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="sendWithCC()[pri:5, instance:EmailTesting@1936f0f5]" name="sendWithCC" duration-ms="5597" started-at="2021-12-25T08:22:32Z" finished-at="2021-12-25T08:22:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithCC -->
+        <test-method status="PASS" signature="sendWithAttachmentFromDrive()[pri:6, instance:EmailTesting@1936f0f5]" name="sendWithAttachmentFromDrive" duration-ms="14045" started-at="2021-12-25T08:22:38Z" finished-at="2021-12-25T08:22:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendWithAttachmentFromDrive -->
+        <test-method status="PASS" signature="sendWithEmoji()[pri:7, instance:EmailTesting@1936f0f5]" name="sendWithEmoji" duration-ms="6145" started-at="2021-12-25T08:22:52Z" finished-at="2021-12-25T08:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithEmoji -->
+        <test-method status="PASS" signature="sendWithoutRecipient()[pri:8, instance:EmailTesting@1936f0f5]" name="sendWithoutRecipient" duration-ms="5125" started-at="2021-12-25T08:22:58Z" finished-at="2021-12-25T08:23:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithoutRecipient -->
+        <test-method status="PASS" signature="sendWithoutSubject()[pri:9, instance:EmailTesting@1936f0f5]" name="sendWithoutSubject" duration-ms="4997" started-at="2021-12-25T08:23:03Z" finished-at="2021-12-25T08:23:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithoutSubject -->
+        <test-method status="PASS" signature="sendWithoutBody()[pri:10, instance:EmailTesting@1936f0f5]" name="sendWithoutBody" duration-ms="5008" started-at="2021-12-25T08:23:08Z" finished-at="2021-12-25T08:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendWithoutBody -->
+        <test-method status="PASS" signature="discardDraft()[pri:11, instance:EmailTesting@1936f0f5]" name="discardDraft" duration-ms="4919" started-at="2021-12-25T08:23:13Z" finished-at="2021-12-25T08:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discardDraft -->
+        <test-method status="PASS" signature="sendMailLater()[pri:12, instance:EmailTesting@1936f0f5]" name="sendMailLater" duration-ms="3461" started-at="2021-12-25T08:23:18Z" finished-at="2021-12-25T08:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMailLater -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:EmailTesting@1936f0f5]" name="closeBrowser" is-config="true" duration-ms="765" started-at="2021-12-25T08:23:22Z" finished-at="2021-12-25T08:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- EmailTesting -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

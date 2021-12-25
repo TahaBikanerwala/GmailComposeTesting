@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -5,6 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
@@ -15,6 +19,7 @@ public class EmailTesting {
 	private String recipient = "tahabikanerwal@gmail.com"; //Edit mail as per required
 	private String cc = "tahabikanerwal@gmail.com";
 	private String subject = "Incubyte";
+	List<WebElement> list;
 
 	@BeforeSuite
 	public void openBrowser() {
@@ -44,24 +49,25 @@ public class EmailTesting {
 	public void composeClick() {
 		// Clicking on Compose button
 		driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
-		driver.findElement(By.xpath("//img[@class='Ha']")).click();
+//		driver.findElement(By.xpath("//img[@class='Ha']")).click();
 
 	}
 
-	@Test(priority = 4) // Test Case 2
+	@Test(priority = 4) 
 	public void sendMail() throws InterruptedException {
-		driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+		composeClick();
 		driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 		driver.findElement(By.className("aoT")).sendKeys(subject);
 		driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
 		driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click();
 		Thread.sleep(4000);
 	}
+	
 
-	@Test(priority = 5) // Test Case 3
+	@Test(priority = 5) 
 	public void sendWithCC() throws InterruptedException {
 
-		driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+		composeClick();
 		driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 		// Element to click CC
 		driver.findElement(By.xpath("//span[@class='aB gQ pE']")).click();
@@ -71,11 +77,12 @@ public class EmailTesting {
 		driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
 		driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click();
 		Thread.sleep(4000);
+		
 	}
 
-	@Test(priority = 6) // Test Case 4
+	@Test(priority = 6) 
 	public void sendWithAttachmentFromDrive() throws InterruptedException {
-		driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+		composeClick();
 		driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 		driver.findElement(By.className("aoT")).sendKeys(subject);
 		driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
@@ -103,9 +110,9 @@ public class EmailTesting {
 
 	}
 	
-	  @Test(priority=7) //Test Case 5 
+	  @Test(priority=7)  
 	  public void sendWithEmoji() throws InterruptedException {
-	  driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+		  composeClick();
 	  driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 	  driver.findElement(By.className("aoT")).sendKeys(subject);
 	  driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText); 
@@ -118,9 +125,9 @@ public class EmailTesting {
 	  driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click(); 
 	  Thread.sleep(4000); }
 	 
-	  @Test(priority = 8) //Test Case 6 
+	  @Test(priority = 8) 
 	  public void sendWithoutRecipient() throws InterruptedException { 
-	  driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+	  composeClick();
 	  //Finding Element for Subject Line
 	  driver.findElement(By.className("aoT")).click();
 	  driver.findElement(By.className("aoT")).sendKeys(subject); 
@@ -133,19 +140,19 @@ public class EmailTesting {
 	  driver.findElement(By.xpath("//img[@class='Ha']")).click();
 	  Thread.sleep(4000); }
 	  
-	  @Test(priority=9) //Test Case 7 
+	  @Test(priority=9) 
 	  public void sendWithoutSubject() throws InterruptedException {
 	  
-	  driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+	  composeClick();
 	  driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 	  driver.findElement(By.className("aoT")).clear();
 	  driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
 	  driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click(); 
 	  Thread.sleep(4000); }
 	  
-	  @Test(priority=10) //Test Case 8 
+	  @Test(priority=10) 
 	  public void sendWithoutBody() throws InterruptedException {
-	  driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+	  composeClick();
 	  //Element for Recipient
 	  driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 	  driver.findElement(By.className("aoT")).clear();
@@ -153,15 +160,43 @@ public class EmailTesting {
 	  driver.findElement(By.xpath("//div[@class=\'T-I J-J5-Ji aoO v7 T-I-atl L3\']")).click(); 
 	  Thread.sleep(4000); }
 
-	  @Test(priority=11) //Test Case 9 
+	  @Test(priority=11) 
 	  public void discardDraft() throws InterruptedException {
-	  driver.findElement(By.xpath("//div[@class='T-I T-I-KE L3']")).click();
+	  composeClick();
 	  driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
 	  driver.findElement(By.className("aoT")).sendKeys(subject);
 	  driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
 	  driver.findElement(By.xpath("//div[@class='oh J-Z-I J-J5-Ji T-I-ax7']")).click(); 
 	  Thread.sleep(4000);
 	 
+	  }
+	  
+	  @Test(priority=12)
+		public void sendMailLater() throws InterruptedException {
+		    composeClick();
+			driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys(recipient);
+			driver.findElement(By.className("aoT")).sendKeys(subject);
+			driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf tS-tW']")).sendKeys(bodyText);
+			driver.findElement(By.xpath("//div[@class='G-asx']")).click();
+			driver.findElement(By.xpath("//div[@class='J-N yr']")).click();
+			driver.findElement(By.xpath("//div[@class='Kj-JD-K7']")).click();
+			list = driver.findElements(By.xpath("//div[@class='Aj']"));
+			for(int i=0;i<list.size();i++) {
+				if(list.get(i).getText().equalsIgnoreCase("Tomorrow morning")) {
+					list.get(i).click();
+					Thread.sleep(2000);
+					break;
+					
+					}
+				}
+			}
+				
+	  
+	  
+	  @AfterSuite
+	  public void closeBrowser() {
+		  driver.quit();
+		  
 	  }
 	 
 }
